@@ -1,0 +1,7 @@
+.card-body{
+  max-width: 1000px;
+}
+#example3 tr td{
+    padding: 20px 0;
+    border-bottom: 0.5px solid rgb(180, 180, 180);
+}

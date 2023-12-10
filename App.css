@@ -1,0 +1,248 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.spancolor {
+  color: #f7473a;
+  font-weight: bold;
+  font-size: 14px;
+}
+/* Regular styles for your component */
+.printable-content {
+  display: none;
+}
+
+/* Media query to apply styles only during print preview */
+@media print {
+  .printable-content {
+    display: block;
+  }
+}
+/* ----- Billing list ------ */
+
+.billback {
+  background-color: #282c34;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+.koushi {
+  color: blue;
+}
+.img img {
+  width: 300px;
+}
+
+.allien h4 {
+  color: rgb(36, 58, 255);
+}
+.allien1 {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 30px;
+}
+
+.student-details-show p {
+  font-family: "Poppins", sans-serif !important;
+  color: #666;
+}
+.modal-content-inner {
+  margin-bottom: 0px !important;
+  height: 100% !important;
+}
+.modal-parent{
+  padding: 1rem 1rem 0rem 1rem !important;
+}
+.add-new-section{
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.swal2-container{
+  font-family: 'Noto Serif', serif;
+}
+
+
+@media screen, print{
+  .invoice-wrapper {
+    margin: 20px auto;
+    width: 90vw;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  .invoice-top {
+    background-color: #fafafa;
+    padding: 40px 40px;
+  }
+  /*
+  Invoice-top-left refers to the client name & address, service provided
+  */
+  .invoice-top-left {
+    margin-top: 60px;
+  }
+  .invoice-top-left h2,
+  .invoice-top-left h6 {
+    line-height: 1.5;
+    font-family: "Montserrat", sans-serif;
+  }
+  .invoice-top-left h4 {
+    margin-top: 30px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .invoice-top-left h5 {
+    line-height: 1.4;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+  }
+  .client-company-name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  .client-address {
+    font-size: 14px;
+    margin-top: 5px;
+    color: rgba(0, 0, 0, 0.75);
+  }
+  
+  /*
+  Invoice-top-right refers to the our name & address, logo and date
+  */
+  .invoice-top-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+  }
+  .invoice-top-right h2,
+  .invoice-top-right h6 {
+    line-height: 1.5;
+    font-family: "Montserrat", sans-serif;
+  }
+  .invoice-top-right h5 {
+    line-height: 1.4;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    margin-top: 0;
+    text-align: center;
+  }
+  .our-company-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  .our-address {
+    font-size: 13px;
+    margin-top: 0;
+    color: rgba(0, 0, 0, 0.75);
+  }
+  .logo-wrapper {
+    overflow: auto;
+    text-align: center;
+  }
+  
+  /*
+  Invoice-bottom refers to the bottom part of invoice template
+  */
+  .invoice-bottom {
+    background-color: #ffffff;
+    padding: 40px 60px;
+    position: relative;
+  }
+  .title {
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  /*
+  Invoice-bottom-left
+  */
+  .invoice-bottom-left h5,
+  .invoice-bottom-left h4 {
+    font-family: "Montserrat", sans-serif;
+  }
+  .invoice-bottom-left h4 {
+    font-weight: 400;
+  }
+  .terms {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    margin-top: 40px;
+  }
+  .divider {
+    margin-top: 50px;
+    margin-bottom: 5px;
+  }
+  /*
+  bottom-bar is colored bar located at bottom of invoice-card
+  */
+  .bottom-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 26px;
+    background-color: #323149;
+  }
+  .footer-links i{
+    margin-right: 10px;
+  }
+  .footer-links a {
+    text-decoration: none;
+  }
+  
+  .tbl-bill-details th {
+    text-transform: capitalize !important;
+  }
+  .tbl-bill-details > :not(:last-child) > :last-child > * {
+    border-bottom-color: currentColor !important;
+    font-size: 15px;
+  }
+  
+  .tbl-bill-details > :not(caption) > * > * {
+    padding: 0.5rem 0.5rem;
+    background-color: var(--bs-table-bg);
+    border-bottom-width: 2px;
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+  }
+  .terms-list li {
+    list-style-type: disc;
+  }
+}
+
+

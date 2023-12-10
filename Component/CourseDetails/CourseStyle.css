@@ -1,0 +1,21 @@
+.error{
+    color: red;
+}
+.action-button{
+    padding: 2px 8px;
+}
+.action-button i{
+    font-size: 12px;
+    color: #fff;
+}
+.action-items{
+    gap: 5px;
+    justify-content: center;
+}
+.card-header{
+    background: #4b446e;
+    padding: 10px 8px;
+}
+.card-header .card-title{
+    color: #fff;
+}
